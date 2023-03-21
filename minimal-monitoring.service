@@ -1,0 +1,11 @@
+[Unit]
+Description=Minimal Monitoring Service
+After=network.target
+
+[Service]
+User=USER
+ExecStart=/usr/bin/python3 PATH
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
